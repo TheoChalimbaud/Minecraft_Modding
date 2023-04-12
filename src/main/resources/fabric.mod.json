@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "shadventuremod",
+	"version": "${version}",
+	"name": "Shad-venture",
+	"description": "Le mod de test de Shadapin, si t'as des idées hésite pas zebi",
+	"authors": [
+		"Shadapin"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/shadventuremod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.shadapin.shadventuremod.ShadventureMod"
+		],
+		"client": [
+			"net.shadapin.shadventuremod.ShadventureModClient"
+		],
+		"fabric-datagen": [
+			"net.shadapin.shadventuremod.ShadventureModDataGenerator"
+		]
+	},
+	"mixins": [
+		"shadventuremod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
