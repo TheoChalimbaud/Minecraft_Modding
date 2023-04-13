@@ -1,4 +1,6 @@
 {
   "item.shadventuremod.rainbow_ingot": "Rainbow Ingot",
-  "item.shadventuremod.rainbow_sword": "Rainbow Sword"
+  "item.shadventuremod.rainbow_sword": "Rainbow Sword",
+
+  "itemgroup.rainbow_sword": "Shadventure Mod"
 }

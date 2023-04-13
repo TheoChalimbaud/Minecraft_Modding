@@ -13,8 +13,8 @@ public class ShadventureMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItems.registerModItems();
+
 		ModItemGroup.registerItemGroups();
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 }

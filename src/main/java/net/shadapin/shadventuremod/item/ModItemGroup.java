@@ -9,10 +9,10 @@ import net.shadapin.shadventuremod.ShadventureMod;
 
 public class ModItemGroup {
 
-    public static ItemGroup RAINBOW_SWORD;
+    public static ItemGroup SHADGROUP;
     public static void registerItemGroups(){
-        RAINBOW_SWORD = FabricItemGroup.builder(new Identifier(ShadventureMod.MOD_ID, "rainbow_sword"))
-                .displayName(Text.literal("Shadventure Mod"))
+        SHADGROUP = FabricItemGroup.builder(new Identifier(ShadventureMod.MOD_ID, "rainbow_sword"))
+                .displayName(Text.translatable("itemgroup.rainbow_sword"))
                 .icon(() -> new ItemStack(ModItems.RAINBOW_SWORD)).build();
     }
 }
