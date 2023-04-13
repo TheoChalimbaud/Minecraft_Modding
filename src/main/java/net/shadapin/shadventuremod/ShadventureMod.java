@@ -2,6 +2,7 @@ package net.shadapin.shadventuremod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.shadapin.shadventuremod.block.ModBlocks;
 import net.shadapin.shadventuremod.item.ModItemGroup;
 import net.shadapin.shadventuremod.item.ModItems;
 import org.slf4j.Logger;
@@ -15,5 +16,6 @@ public class ShadventureMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModItemGroup.registerItemGroups();
+		ModBlocks.registerModBlocks();
 	}
 }

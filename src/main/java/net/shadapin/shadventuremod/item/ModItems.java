@@ -20,7 +20,9 @@ public class ModItems {
 
 
     public static void addItemsToItemGroup(){
-        addToItemGroup(ModItemGroup.RAINBOW_SWORD, RAINBOW_INGOT);
+
+        addToItemGroup(ItemGroups.COMBAT, RAINBOW_SWORD);
+        addToItemGroup(ItemGroups.INGREDIENTS, RAINBOW_INGOT);
     }
 
 
