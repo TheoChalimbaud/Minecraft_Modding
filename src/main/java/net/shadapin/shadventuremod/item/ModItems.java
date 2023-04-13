@@ -18,18 +18,18 @@ public class ModItems {
 
 
 
-
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, new Identifier(ShadventureMod.MOD_ID, name), item);
+    }
     public static void addItemsToItemGroup(){
 
-        addToItemGroup(ItemGroups.COMBAT, RAINBOW_SWORD);
+        addToItemGroup(ModItemGroup.RAINBOW_SWORD, RAINBOW_SWORD);
         addToItemGroup(ItemGroups.INGREDIENTS, RAINBOW_INGOT);
     }
 
 
 
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(ShadventureMod.MOD_ID, name), item);
-    }
+
     private static void addToItemGroup(ItemGroup group, Item item){
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
     }
